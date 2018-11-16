@@ -1,0 +1,81 @@
+package librerias;
+
+public class man_str {
+
+	public static void main(String[] args) {
+		String n1=new String("Primero s");
+		String n2=new String("segundo");
+		String n3=new String("primero");
+		String n4=new String();
+		String sepa=new String ("--------------");
+		int n5=3;
+		boolean pruebas;
+		//comparacion 
+		System.out.println(n1.equals(n2));
+		System.out.println(n1.equals(n3));//no son iguales al contener una mayuscula
+		System.out.println(sepa);
+		//longitud
+		System.out.println(n1.length());
+		System.out.println(n2.length());
+		System.out.println(sepa);
+		//a MAYUSCULA 
+		System.out.println(n1.toUpperCase());
+		System.out.println(n2.toUpperCase());
+		System.out.println(sepa);
+		//contiene en?
+		System.out.println(n1.contains("o"));
+		System.out.println(n2.contains("z"));
+		System.out.println(sepa);
+		//esta vacio?
+		System.out.println(n1.isEmpty());
+		System.out.println(n4.isEmpty());
+		System.out.println(sepa);
+		//reemplazo de una seccion de la cadena
+		System.out.println(n1.replace("e","o"));
+		System.out.println(n2.replace("undo","endestre"));//no hay limite al reemplazar
+		System.out.println(sepa);
+		//reemplazo completo
+		System.out.println(n1.replaceAll("Primero", "cuarto"));//para que funcione se debe escribir igual
+		System.out.println(n2.replaceAll("ter","funciona"));//si no lo es se ignora la orden
+		System.out.println(sepa);
+		//comienza con
+		System.out.println(n3.startsWith("p"));
+		System.out.println(n1.startsWith("h"));
+		System.out.println(sepa);
+		//termina con
+		System.out.println(n1.endsWith("s"));
+		System.out.println(sepa);
+		//arreglo de char
+		System.out.println(n1.toCharArray());
+		System.out.println(sepa);
+		//minuscula
+		System.out.println(n3.toLowerCase());
+		System.out.println(n2.toLowerCase());
+		System.out.println(sepa);
+		//junta los espacios en blanco
+		System.out.println(n1.trim());
+		System.out.println(sepa);
+		//concadenacion de string
+		System.out.println(n1.concat(n2));
+		System.out.println(sepa);
+		//obtener bytes
+		System.out.println(n1.getBytes());
+		System.out.println(sepa);
+		//muestra el caracter ubicado en N casilla
+		System.out.println(n1.charAt(2));
+		System.out.println(sepa);
+		//Returns a canonical representation for the string object.
+		System.out.println(n1.intern());
+		System.out.println(n2.intern());
+		//pruebas
+		/*pruebas=(n1.equals(n2));
+		if (pruebas==false){
+			System.out.println("Funciona!");
+		}else{
+			System.out.print("no funciono");//funciona siempre y cuando se respete el tipo de salida
+		}*/
+
+
+	}
+
+}
